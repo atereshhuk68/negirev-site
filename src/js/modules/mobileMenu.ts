@@ -14,12 +14,17 @@ function openMobileMenu(): void {
 	headerMobileMenu.classList.remove('hidden');
 	headerMobileMenu.classList.add('flex');
 
+	window.scrollTo(0, 0);
+	document.body.classList.add('overflow-hidden');
+
 	headerBurger.classList.add('is-active');
 }
 
 function closeMobileMenu(): void {
 	headerMobileMenu.classList.add('hidden');
 	headerMobileMenu.classList.remove('flex');
+
+	document.body.classList.remove('overflow-hidden');
 
 	headerBurger.classList.remove('is-active');
 }
