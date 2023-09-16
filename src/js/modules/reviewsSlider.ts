@@ -6,12 +6,16 @@ function initSlider(): void {
 		mediaQuery: 'min',
 		gap: 32,
 		pagination: true,
-		autoHeight: true,
 	});
 
 	slider.mount();
 
-	slider.refresh();
+	slider.on('inactive', function (slide) {
+		console.log(slide);
+	});
+	slider.on('active', function (slide) {
+		console.log(slide);
+	});
 }
 
 initSlider();

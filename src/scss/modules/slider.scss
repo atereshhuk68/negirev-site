@@ -1,14 +1,33 @@
 .splide {
 	$buttonSize: 40px;
 
+	&__slide {
+		min-height: 128px;
+		display: grid;
+		grid-template-rows: 0fr;
+		transition: grid-template-rows 450ms ease-in-out;
+
+		.inner {
+			overflow: hidden;
+			grid-template-rows: 0fr;
+			/* transition: grid-template-rows 450ms ease-in-out; */
+		}
+
+		&.is-active {
+			grid-template-rows: 1fr;
+			.inner {
+				grid-template-rows: 1fr;
+			}
+		}
+	}
+
 	&__arrow {
 		fill: white;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		position: absolute;
-		top: 50%;
-		translate: 0 -50%;
+		top: 40px;
 		transition: opacity 0.3s ease-in-out;
 
 		@media (max-width: 767.98px) {
@@ -30,12 +49,12 @@
 	}
 	&__pagination {
 		display: flex;
-		gap: 6px;
-		margin-top: 8px;
+		gap: 12px;
+		margin-top: 24px;
 	}
 	&__pagination__page {
-		height: 8px;
-		width: 8px;
+		height: 12px;
+		width: 12px;
 		border-radius: 100%;
 		background-color: gray;
 
