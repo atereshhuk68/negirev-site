@@ -6,4 +6,6 @@ $hamburger-layer-spacing: 6px;
 $hamburger-layer-color: white;
 $hamburger-layer-border-radius: 4px !default;
 
+$hamburger-types: (boring) !default;
+
 @import 'hamburgers/_sass/hamburgers/hamburgers';
