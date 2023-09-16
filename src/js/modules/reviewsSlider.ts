@@ -8,14 +8,15 @@ function initSlider(): void {
 		pagination: true,
 	});
 
-	slider.mount();
+	const bar: any = document.querySelector('.reviews-progress-bar');
 
-	slider.on('inactive', function (slide) {
-		console.log(slide);
+	slider.on('mounted move', function () {
+		let end = slider.Components.Controller.getEnd() + 1;
+		let rate = Math.min((slider.index + 1) / end, 1);
+		bar.style.width = String(100 * rate) + '%';
 	});
-	slider.on('active', function (slide) {
-		console.log(slide);
-	});
+
+	slider.mount();
 }
 
 initSlider();
