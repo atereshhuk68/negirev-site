@@ -3,6 +3,7 @@ import { resolve } from 'path';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+	base: '/negirev-site/',
 	resolve: {
 		alias: {
 			'@img': resolve(__dirname, 'src/img/'),
