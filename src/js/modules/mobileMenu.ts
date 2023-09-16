@@ -48,6 +48,9 @@ function moveHeaderElements(): void {
 }
 
 function initListeners(): void {
+	headerNavContainer.classList.remove('hidden');
+	headerSocialContainer.classList.remove('hidden');
+
 	window.addEventListener('resize', moveHeaderElements);
 	moveHeaderElements();
 	headerBurger.addEventListener('click', toggleMobileMenu);
