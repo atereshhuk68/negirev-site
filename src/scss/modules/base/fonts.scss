@@ -1,0 +1,22 @@
+@font-face {
+	font-family: 'Inter', sans-serif;
+	src: url('@fonts/inter-variable.woff2') format('woff2');
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'PlayFair', serif;
+	src: url('@fonts/playfair-variable.woff2') format('woff2');
+	font-style: normal;
+}
+
+:root {
+	--ff-primary: 'Inter', sans-serif;
+	--ff-secondary: 'PlayFair', sans-serif;
+}
+
+@for $i from 1 through 4 {
+	h#{$i} {
+		font-family: var(--ff-secondary);
+	}
+}

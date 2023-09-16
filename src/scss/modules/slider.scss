@@ -1,0 +1,46 @@
+.splide {
+	$buttonSize: 40px;
+
+	&__arrow {
+		fill: white;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		position: absolute;
+		top: 50%;
+		translate: 0 -50%;
+		transition: opacity 0.3s ease-in-out;
+
+		@media (max-width: 767.98px) {
+			display: none;
+		}
+
+		&:disabled {
+			opacity: 0.35;
+		}
+
+		&--prev {
+			rotate: 180deg;
+			left: calc($buttonSize * -2);
+		}
+
+		&--next {
+			right: calc($buttonSize * -2);
+		}
+	}
+	&__pagination {
+		display: flex;
+		gap: 6px;
+		margin-top: 8px;
+	}
+	&__pagination__page {
+		height: 8px;
+		width: 8px;
+		border-radius: 100%;
+		background-color: gray;
+
+		&.is-active {
+			background-color: white;
+		}
+	}
+}

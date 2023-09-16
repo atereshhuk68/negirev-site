@@ -1,0 +1,11 @@
+.intro__photo {
+	&::before {
+		content: '';
+		position: absolute;
+		display: flex;
+		inset: 0;
+		background: linear-gradient(0, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 10%);
+		pointer-events: none;
+		isolation: isolate;
+	}
+}
