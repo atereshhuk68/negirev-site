@@ -5,3 +5,4 @@ import '../../scss/entries/about.scss';
 import '../common';
 
 import '@modules/certificatesSlider.ts';
+import '@modules/gallery.ts';
