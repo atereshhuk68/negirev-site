@@ -1,6 +1,7 @@
 import '@splidejs/splide/css/core';
 import '../../scss/entries/about.scss';
 
-import '@modules/svgSprite.ts';
-import '@modules/mobileMenu.ts';
+/* Common */
+import '../common';
+
 import '@modules/certificatesSlider.ts';

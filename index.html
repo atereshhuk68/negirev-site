@@ -29,8 +29,9 @@
             <li><a href="about.html" class="hover:opacity-75 transition-opacity" title="Обо мне">Обо мне</a></li>
             <li><a href="consultation.html" class="hover:opacity-75 transition-opacity"
                 title="Консультации">Консультации</a></li>
-            <li><a href="#" class="hover:opacity-75 transition-opacity" title="Отзывы">Отзывы</a></li>
-            <li><a href="#" class="hover:opacity-75 transition-opacity" title="Контакты">Контакты</a></li>
+            <li><a href="#reviews" class="hover:opacity-75 transition-opacity scrollTo" title="Отзывы">Отзывы</a></li>
+            <li><a href="#contacts" class="hover:opacity-75 transition-opacity scrollTo" title="Контакты">Контакты</a>
+            </li>
           </ul>
         </nav>
       </div>
@@ -72,14 +73,13 @@
   <main class="main min-w-0">
     <section class="intro pb-10 md:pb-12">
       <div class="container px-4 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
-        <div class="intro__wrapper  md:w-1/2">
+        <div class="intro__wrapper md:w-1/2">
           <h1 class="text-4xl md:text-5xl font-semibold font-serif mb-4">Владимир Владимирович Негирев</h1>
           <p class="text-lg mb-8">Магистр психологии, практикующий психолог, специалист по работе с психическими,
             поведенческими и эмоциональными нарушениями</p>
-          <button
-            class="py-2 px-4 sm:px-6 md:py-3 md:px-7 text-lg font-semibold bg-white text-black rounded-lg hover:bg-gray-300 transition-colors">Записаться
-            на
-            консультацию</button>
+          <a href="consultation.html"
+            class="inline-flex py-2 px-4 sm:px-6 md:py-3 md:px-7 text-lg font-semibold bg-white text-black rounded-lg hover:bg-gray-300 transition-colors"
+            title="Записаться на консультацию">Записаться на консультацию</a>
         </div>
 
         <div class="intro__photo sm:w-3/4 md:w-1/2 relative">
@@ -146,7 +146,7 @@
       </div>
     </div>
 
-    <section class="py-10 md:py-16">
+    <section id="reviews" class="py-10 md:py-16">
       <div class="container px-4">
         <h2 class="text-center text-3xl md:text-4xl font-medium font-serif">Отзывы</h2>
 
@@ -275,7 +275,7 @@
         </div>
     </section>
 
-    <section class="py-10 md:py-16">
+    <section id="contacts" class="py-10 md:py-16">
       <div class="container px-4">
         <h2 class="text-center text-3xl md:text-4xl font-medium font-serif">Контакты</h2>
 
