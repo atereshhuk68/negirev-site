@@ -1,11 +1,16 @@
 import Splide from '@splidejs/splide';
 
 function initSlider(): void {
-	const slider = new Splide('#reviewsSlider', {
+	const slider = new Splide('#certificateSlider', {
+		type: 'loop',
 		perPage: 1,
 		mediaQuery: 'min',
 		gap: 32,
+		arrows: false,
 		pagination: true,
+		autoplay: true,
+		interval: 4500,
+		speed: 2500,
 	});
 
 	const bar: any = document.querySelector('.slider-progress-bar');
