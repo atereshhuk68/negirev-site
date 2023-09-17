@@ -9,8 +9,7 @@
   <meta name="keywords" content="психолог онлайн, психотерапевт онлайн.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@500;600&display=swap"
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Serif:ital,wght@0,400;0,600;1,400&display=swap"
     rel="stylesheet">
 </head>
 
@@ -18,14 +17,14 @@
   <header class="header py-8 text-xl font-serif">
     <div class="container px-4 flex items-center justify-between gap-8">
       <div class="logo header__logo">
-        <a href="/" class="uppercase font-serif tracking-widest hover:text-blue-200 transition-colors">
+        <span class="uppercase leading-none font-serif tracking-widest cursor-default">
           Психолог <br>Негирев
-        </a>
+        </span>
       </div>
 
       <div class="headerNavContainer hidden">
         <nav id="headerNav" class="lg:flex lg:flex-1 justify-center">
-          <ul class="pt-6 lg:pt-0 flex flex-col lg:flex-row items-center gap-8 font-serif tracking-wider">
+          <ul class="pt-6 lg:pt-0 flex flex-col lg:flex-row items-center gap-8 font-serif text-xl lg:text-lg">
             <li><a href="about.html" class="hover:opacity-75 transition-opacity" title="Обо мне">Обо мне</a></li>
             <li><a href="consultation.html" class="hover:opacity-75 transition-opacity"
                 title="Консультации">Консультации</a></li>
@@ -74,7 +73,7 @@
     <section class="intro pb-10 md:pb-12">
       <div class="container px-4 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
         <div class="intro__wrapper md:w-1/2">
-          <h1 class="text-4xl md:text-5xl font-semibold font-serif mb-4">Владимир Владимирович Негирев</h1>
+          <h1 class="text-4xl md:text-5xl font-semibold font-serif mb-4">Владимир <br>Владимирович <br>Негирев</h1>
           <p class="text-lg mb-8">Магистр психологии, практикующий психолог, специалист по работе с психическими,
             поведенческими и эмоциональными нарушениями</p>
           <a href="consultation.html"
@@ -91,7 +90,7 @@
 
     <section class="py-10 md:py-16">
       <div class="container px-4">
-        <h2 class="text-center text-3xl md:text-4xl font-medium font-serif">Виды деятельности</h2>
+        <h2 class="text-center text-3xl md:text-4xl font-semibold font-serif">Виды деятельности</h2>
 
         <div class="flex flex-col sm:flex-row gap-12 items-center justify-center mt-8">
           <div class="flex flex-col items-center gap-4 sm:w-1/2">
@@ -110,107 +109,132 @@
 
     <section class="py-10 md:py-16">
       <div class="container px-4">
-        <h2 class="text-center text-3xl md:text-4xl font-medium font-serif">Помощь</h2>
+        <h2 class="text-center text-3xl md:text-4xl font-semibold font-serif mb-8">Помощь</h2>
 
-        <ul class="sm:columns-2 lg:columns-3 mt-8 text-lg">
-          <li class="mb-4">Психические расстройства, неврозы</li>
-          <li class="mb-4">Тревога, панические атаки</li>
-          <li class="mb-4">Депрессии, страхи, фобии</li>
-          <li class="mb-4">Психологические травмы</li>
-          <li class="mb-4">Стрессы, зависимости, бессонница</li>
-          <li class="mb-4">Психосоматические расстройства</li>
-          <li class="mb-4">Расстройства пищевого поведения</li>
-          <li class="mb-4">Навязчивые мысли</li>
-          <li class="mb-4">Трудности в отношениях</li>
-          <li class="mb-4">Отсутствие мотивации</li>
-          <li class="mb-4">Болезненные воспоминания</li>
-          <li class="mb-4">Стыд, чувство вины</li>
-          <li class="mb-4">Проблемы с самооценкой</li>
-          <li class="mb-4">Неуверенность, неопределённость</li>
-          <li class="mb-4">Мысли о сглазе, порче, проклятии</li>
-        </ul>
+        <div class="grid lg:grid-cols-3 justify-center gap-8">
+          <ul class="text-lg ps-4 md:ps-0 list-disc marker:text-gray-400">
+            <li class="mb-4">Психические расстройства, неврозы</li>
+            <li class="mb-4">Тревога, панические атаки</li>
+            <li class="mb-4">Депрессии, страхи, фобии</li>
+            <li class="mb-4">Психологические травмы</li>
+            <li class="mb-4">Стрессы, зависимости, бессонница</li>
+          </ul>
+
+          <ul class="text-lg ps-4 md:ps-0 list-disc marker:text-gray-400">
+            <li class="mb-4">Психосоматические расстройства</li>
+            <li class="mb-4">Расстройства пищевого поведения</li>
+            <li class="mb-4">Навязчивые мысли</li>
+            <li class="mb-4">Трудности в отношениях</li>
+            <li class="mb-4">Отсутствие мотивации</li>
+          </ul>
+
+          <ul class="text-lg ps-4 md:ps-0 list-disc marker:text-gray-400">
+            <li class="mb-4">Болезненные воспоминания</li>
+            <li class="mb-4">Стыд, чувство вины</li>
+            <li class="mb-4">Проблемы с самооценкой</li>
+            <li class="mb-4">Неуверенность, неопределённость</li>
+            <li class="mb-4">Мысли о сглазе, порче, проклятии</li>
+          </ul>
+        </div>
       </div>
     </section>
 
     <div class="pb-10 md:pb-16">
       <div class="container px-4">
-        <div class="videoPlayerMockup relative hover:opacity-80 transition-opacity cursor-pointer">
-          <img class="aspect-video w-full" src="src/assets/images/videocover.webp" loading="lazy" alt="Video Cover">
-          <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-16 md:h-16"
-            aria-label="Instagram account" width="64" height="64">
-            <use xlink:href="#play"></use>
-          </svg>
+        <div class="lg:w-3/4 lg:mx-auto">
+          <div class="videoPlayerMockup relative hover:opacity-80 transition-opacity cursor-pointer">
+            <img class="aspect-video w-full" src="src/assets/images/videocover.webp" loading="lazy" alt="Video Cover">
+            <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-16 md:h-16"
+              aria-label="Instagram account" width="64" height="64">
+              <use xlink:href="#play"></use>
+            </svg>
+          </div>
+          <video id="videoPlayer" class="hidden aspect-video w-full" controls src=""
+            data-src="src/assets/video/video.mp4"></video>
         </div>
-        <video id="videoPlayer" class="hidden aspect-video w-full" controls src=""
-          data-src="src/assets/video/video.mp4"></video>
       </div>
     </div>
 
     <section id="reviews" class="py-10 md:py-16">
       <div class="container px-4">
-        <h2 class="text-center text-3xl md:text-4xl font-medium font-serif">Отзывы</h2>
+        <h2 class="text-center text-3xl md:text-4xl font-semibold font-serif">Отзывы</h2>
 
         <div class="md:w-3/4 mx-auto">
-          <div id="reviewsSlider" class="splide mt-8" aria-label="Reviews Slider">
-            <div class="slider-progress mb-4">
-              <div class="slider-progress-bar"></div>
+          <div id="reviewsSlider" class="splide splide--reviews mt-8" aria-label="Reviews Slider">
+            <div class="splide__arrows">
+              <button class="splide__arrow splide__arrow--prev">
+                <svg class="icon" aria-label="Go to prev slide" width="20" height="20">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </button>
+              <button class="splide__arrow splide__arrow--next">
+                <svg class="icon" aria-label="Go to next slide" width="20" height="20">
+                  <use xlink:href="#arrow-right"></use>
+                </svg>
+              </button>
             </div>
 
             <div class="splide__track">
               <ul class="splide__list text-lg">
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Обратилась с желанием лучше понять и узнать себя. Уже с первых консультаций начала замечать
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Обратилась с желанием лучше понять и узнать себя. Уже с первых
+                      консультаций начала замечать
                       ограничивающие убеждения и работать над ними. Хороший психолог, который стопроцентно
                       концентрируется
                       на клиенте и старается сделать всё возможное, чтобы помочь. Даёт возможность раскрыться. Задаёт
                       правильные, нужные для решения поставленных задач вопросы.</p>
-                    <p class="text-gray-300 italic mt-4">Татьяна</p>
+                    <p>Татьяна</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Владимир - профессионал! Рекомендую! Мне терапия помогла с первых консультаций! Психолог глубокий
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Владимир - профессионал! Рекомендую! Мне терапия помогла с первых
+                      консультаций! Психолог глубокий
                       и
                       в
                       то же время с юмором, что делает терапию лёгкой и эффективной! Решает проблемы любого уровня
                       сложности.</p>
-                    <p class="text-gray-300 italic mt-4">Ирина</p>
+                    <p>Ирина</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Компетентний у своїй справі. Завжди на зв'язку. Видно, що хороша людина, якій не все одно. Все
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Компетентний у своїй справі. Завжди на зв'язку. Видно, що хороша
+                      людина, якій не все одно. Все
                       сподобалось.</p>
-                    <p class="text-gray-300 italic mt-4">Віталій</p>
+                    <p>Віталій</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Обратился к Владимиру с проблемой, которая почти разрушила мою жизнь. Я потерял себя, и моя жизнь
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Обратился к Владимиру с проблемой, которая почти разрушила мою жизнь. Я
+                      потерял себя, и моя жизнь
                       пошла под откос. Я обесценил всё своё прошлое. Я вспомнил кто я на самом деле и что я могу, и с
                       лёгкой
                       руки Владимира начал восстанавливать свою жизнь, и у меня это получилось. Владимир очень чётко
                       нашёл
                       ключик к моей проблеме, и теперь разговоры с ним крутятся у меня в голове и помогают добиваться
                       результатов. Он метко и быстро попал в цель! Очень ему благодарен!</p>
-                    <p class="text-gray-300 italic mt-4">Евгений</p>
+                    <p>Евгений</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Хороший психолог! Дуже ефективна робота, працюємо 2 місяці, і в мене вже видимі зміни в житті на
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Хороший психолог! Дуже ефективна робота, працюємо 2 місяці, і в мене
+                      вже видимі зміни в житті на
                       краще. Спілкуватися комфортно, з драми виводить м'яко, без тиску. Дуже етичний, добрий, але при
                       тому
                       чітко орієнтується на вирішення проблеми. Вважаю, що мені пощастило з ним працювати. Порадила би
                       всім,
                       для вирішення труднощів в житті.</p>
-                    <p class="text-gray-300 italic mt-4">Олександра</p>
+                    <p>Олександра</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Очень рекомендую консультации с Владимиром! Он детально разбирается в проблеме, с которой вы
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Очень рекомендую консультации с Владимиром! Он детально разбирается в
+                      проблеме, с которой вы
                       пришли,
                       и помогает прийти к оптимальному решению. Владимир помог мне разобраться с эмоциями (мне было
                       трудно
@@ -220,53 +244,58 @@
                       правильно описать проблему, или не до конца понимаете её, но она вас гложет, вам стоит обратиться
                       к
                       Владимиру. Он поможет идентифицировать проблему и эффективно побороть её.</p>
-                    <p class="text-gray-300 italic mt-4">Марина</p>
+                    <p>Марина</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>С Владимиром работаю уже больше 2 месяцев. С первого сеанса был виден результат. За короткое
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">С Владимиром работаю уже больше 2 месяцев. С первого сеанса был виден
+                      результат. За короткое
                       время
                       я
                       осознала мои проблемы и сразу начала над ними работать, и достигла хороших результатов.
                       Порекомендовала Владимира также моим друзьям, которые уже проходили у него терапию. Так рекомендую
                       и
                       вам, я уверена, что вы сможете найти ответы на ваши вопросы.</p>
-                    <p class="text-gray-300 italic mt-4">Дарья</p>
+                    <p>Дарья</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Я дуже задоволений роботою Володимира. Я би рекомендував його будь-кому, хто шукає професійну
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Я дуже задоволений роботою Володимира. Я би рекомендував його
+                      будь-кому, хто шукає професійну
                       допомогу.</p>
-                    <p class="text-gray-300 italic mt-4">Олександр</p>
+                    <p>Олександр</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Владимир очень приятный и эффективный психолог, он чётко ставит задачи терапии и нацелен на
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Владимир очень приятный и эффективный психолог, он чётко ставит задачи
+                      терапии и нацелен на
                       результат. Мне понравилась постоянная отсылка к цели терапии, отсутствие советов и интересные,
                       даже
                       где-то поэтичные сравнения (чтобы увидеть свою ситуацию максимально со стороны). И понравились
                       домашние задания, над которыми нужно работать в остальное от терапии время.</p>
-                    <p class="text-gray-300 italic mt-4">Наталия</p>
+                    <p>Наталия</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Очень профессиональный, лёгкий, понимающий психолог! Очень мне помог, жизнь налаживается
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Очень профессиональный, лёгкий, понимающий психолог! Очень мне помог,
+                      жизнь налаживается
                       благодаря
                       моему психологу и работе, которую мы проделали. Благодарю!</p>
-                    <p class="text-gray-300 italic mt-4">Нина</p>
+                    <p>Нина</p>
                   </div>
                 </li>
                 <li class="splide__slide">
-                  <div class="grid inner">
-                    <p>Владимир очень внимательный и компетентный специалист. На сеансе психотерапии я чувствовала себя
+                  <div class="grid inner gap-4">
+                    <p class="font-serif italic">Владимир очень внимательный и компетентный специалист. На сеансе
+                      психотерапии я чувствовала себя
                       спокойно и была уверена, что без ответа на свой внутренний вопрос с сеанса я не уйду. Удобная
                       система
                       записи и связи.</p>
-                    <p class="text-gray-300 italic mt-4">Мария</p>
+                    <p>Мария</p>
                   </div>
                 </li>
               </ul>
@@ -277,11 +306,10 @@
 
     <section id="contacts" class="py-10 md:py-16">
       <div class="container px-4">
-        <h2 class="text-center text-3xl md:text-4xl font-medium font-serif">Контакты</h2>
+        <h2 class="text-center text-3xl md:text-4xl font-semibold font-serif">Контакты</h2>
 
         <div class="grid grid-cols-1 gap-8 content-center mx-auto w-max mt-8">
-          <a class="flex gap-4 items-center hover:opacity-75 transition-opacity" target="_blank" rel="nofollow noopener"
-            href="tel:+380936767816" title="Зателефонувати за номером +380936767816">
+          <span class="flex gap-4 font-sans items-center">
             <div class="bg-white text-black p-1.5 rounded-full">
               <svg class="icon" aria-label="Phone Number" width="20" height="20">
                 <use xlink:href="#phone"></use>
@@ -289,9 +317,9 @@
             </div>
 
             +38 (093) 676 78 16
-          </a>
+          </span>
 
-          <a class="flex gap-4 items-center hover:opacity-75 transition-opacity" target="_blank"
+          <a class="flex gap-4 font-sans items-center hover:opacity-75 transition-opacity" target="_blank"
             href="viber://chat?number=380936767816" rel="nofollow noopener" title="Чат Viber">
             <div class="bg-white text-black p-1.5 rounded-full">
               <svg class="icon" aria-label="Viber Chat" width="24" height="24">
@@ -302,7 +330,7 @@
             Viber
           </a>
 
-          <a class="flex gap-4 items-center hover:opacity-75 transition-opacity" target="_blank"
+          <a class="flex gap-4 font-sans items-center hover:opacity-75 transition-opacity" target="_blank"
             href="https://t.me/+380936767816" rel="nofollow noopener" title="Чат Telegram">
             <div class="bg-white text-black p-1.5 rounded-full">
               <svg class="icon" aria-label="Telegram Chat" width="20" height="20">
@@ -313,7 +341,7 @@
             Telegram
           </a>
 
-          <a class="flex gap-4 items-center hover:opacity-75 transition-opacity" target="_blank"
+          <a class="flex gap-4 font-sans items-center hover:opacity-75 transition-opacity" target="_blank"
             href="https://wa.me/380936767816" rel="nofollow noopener" title="Чат Whatsapp">
             <div class="bg-white text-black p-1.5 rounded-full">
               <svg class="icon" aria-label="Whatsapp Chat" width="20" height="20">

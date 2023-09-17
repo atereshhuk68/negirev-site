@@ -12,8 +12,9 @@ export default {
 			center: true,
 		},
 		fontFamily: {
-			serif: ['Playfair Display', 'serif'],
-			body: ['Inter', 'sans-serif'],
+			serif: ['Noto Serif', 'serif'],
+			sans: ['Inter', 'sans-serif'],
+			body: ['Noto Serif', 'serif'],
 		},
 	},
 	plugins: [],
