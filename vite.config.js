@@ -3,7 +3,7 @@ import { resolve } from "path";
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/",
+  base: "/negirev-site/",
   resolve: {
     alias: {
       "@fonts": resolve(__dirname, "src/assets/fonts/"),
