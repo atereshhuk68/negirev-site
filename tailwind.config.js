@@ -12,9 +12,9 @@ export default {
       center: true,
     },
     fontFamily: {
-      serif: ["Noto Serif", "serif"],
+      serif: ["Georgia", "serif"],
       sans: ["Inter", "sans-serif"],
-      body: ["Noto Serif", "serif"],
+      body: ["Georgia", "serif"],
       arial: ["Arial", "sans-serif"],
     },
   },
