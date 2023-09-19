@@ -59,18 +59,19 @@
 			style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
 	<header class="header py-8 text-xl font-serif">
-		<div class="container px-4 flex items-center justify-between gap-8">
+		<div class="container px-4 flex items-center flex-wrap justify-between gap-8">
 			<div class="logo header__logo">
-				<a href="/" class="uppercase leading-none font-serif tracking-widest hover:text-gray-300 transition-colors">
+				<span class="uppercase font-serif tracking-widest cursor-default">
 					Психолог <br>Негирев
-				</a>
+				</span>
 			</div>
 
 			<div class="headerNavContainer hidden">
 				<nav id="headerNav" class="lg:flex lg:flex-1 justify-center">
-					<ul class="pt-6 lg:pt-0 flex flex-col lg:flex-row items-center gap-8 font-serif">
+					<ul class="lg:pt-0 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 font-serif">
 						<li><a href="about.html" class="hover:opacity-75 transition-opacity" title="Обо мне">Обо мне</a></li>
-						<li><span class="cursor-default">Консультации</span></li>
+						<li><a href="consultation.html" class="hover:opacity-75 transition-opacity"
+								title="Консультации">Консультации</a></li>
 						<li><a href="/#reviews" class="hover:opacity-75 transition-opacity" title="Отзывы">Отзывы</a></li>
 						<li><a href="#contacts" class="hover:opacity-75 transition-opacity scrollTo" title="Контакты">Контакты</a>
 						</li>
@@ -108,7 +109,7 @@
 			</div>
 
 			<!-- Mobile menu -->
-			<div id="headerMobileMenu" class="hidden flex-col gap-8 fixed top-28 left-0 w-full h-full bg-zinc-900 z-50"></div>
+			<div id="headerMobileMenu" class="hidden flex-col gap-8 w-full lg:w-max pb-8"></div>
 		</div>
 	</header>
 
@@ -131,8 +132,8 @@
 						<span>+380936767816</span>
 					</p>
 
-					<p>Длительность консультации <span class="whitespace-nowrap">60 минут</span> <br>Стоимость
-						консультации <span class="whitespace-nowrap">26 евро</span></p>
+					<p>Длительность консультации <span class="whitespace-nowrap block md:inline">60 минут</span> <br>Стоимость
+						консультации <span class="whitespace-nowrap block md:inline">26 евро</span></p>
 				</div>
 			</div>
 		</section>

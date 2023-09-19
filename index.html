@@ -58,7 +58,7 @@
       style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
   <header class="header py-8 text-xl font-serif">
-    <div class="container px-4 flex items-center justify-between gap-8">
+    <div class="container px-4 flex items-center flex-wrap justify-between gap-8">
       <div class="logo header__logo">
         <span class="uppercase font-serif tracking-widest cursor-default">
           Психолог <br>Негирев
@@ -67,7 +67,7 @@
 
       <div class="headerNavContainer hidden">
         <nav id="headerNav" class="lg:flex lg:flex-1 justify-center">
-          <ul class="pt-6 lg:pt-0 flex flex-col lg:flex-row items-center gap-8 font-serif">
+          <ul class="lg:pt-0 flex flex-col lg:flex-row items-center gap-6 lg:gap-8 font-serif">
             <li><a href="about.html" class="hover:opacity-75 transition-opacity" title="Обо мне">Обо мне</a></li>
             <li><a href="consultation.html" class="hover:opacity-75 transition-opacity"
                 title="Консультации">Консультации</a></li>
@@ -108,27 +108,28 @@
       </div>
 
       <!-- Mobile menu -->
-      <div id="headerMobileMenu" class="hidden flex-col gap-8 fixed top-28 left-0 w-full h-full bg-zinc-900 z-50"></div>
+      <div id="headerMobileMenu" class="hidden flex-col gap-8 w-full lg:w-max pb-8"></div>
     </div>
   </header>
 
   <main class="main min-w-0">
     <section class="intro pb-10 md:pb-12">
-      <div class="container px-4 flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8">
+      <div class="container px-4 flex flex-col-reverse md:flex-row items-center justify-between gap-12 md:gap-8">
         <div class="intro__wrapper md:w-1/2">
           <h1 class="text-4xl md:text-5xl/[1.1] font-semibold font-serif mb-4">Владимир <br>Владимирович
             <br>Негирев
           </h1>
           <p class="text-xl mb-8">Магистр психологии, практикующий психолог, специалист по работе с психическими,
             поведенческими и эмоциональными нарушениями</p>
-          <a href="consultation.html"
-            class="inline-flex py-2 px-4 sm:px-6 md:py-3 md:px-7 text-lg font-sans font-bold bg-white text-black rounded-lg hover:bg-gray-300 transition-colors"
-            title="Записаться на консультацию">Записаться на консультацию</a>
+          <div class="flex justify-center md:justify-start">
+            <a href="consultation.html"
+              class="py-3 px-4 sm:px-6 md:py-3 md:px-7 text-lg font-sans font-bold bg-white text-black rounded-lg hover:bg-gray-300 transition-colors"
+              title="Записаться на консультацию">Записаться на консультацию</a>
+          </div>
         </div>
 
         <div class="intro__photo sm:w-3/4 md:w-1/2 relative">
-          <img src="src/assets/images/negirev-photo.webp" alt="Владимир Владимирович Негирев Фото" width="578"
-            height="664">
+          <img src="images/intro-photo.webp" alt="Владимир Владимирович Негирев Фото" width="578" height="664">
         </div>
       </div>
     </section>
