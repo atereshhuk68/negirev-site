@@ -1,8 +1,13 @@
-import '@splidejs/splide/css/core';
-import '../../scss/entries/about.scss';
+import "@scss/entries/about.scss";
 
-/* Common */
-import '../common';
+import { commonModule } from "../common";
 
-import '@modules/certificatesSlider.ts';
-import '@modules/gallery.ts';
+import { certificatesSlider } from "../modules/certificatesSlider.ts";
+import { lightboxGallery } from "../modules/gallery.ts";
+
+(async () => {
+  await commonModule();
+
+  certificatesSlider!.init();
+  lightboxGallery.init();
+})();

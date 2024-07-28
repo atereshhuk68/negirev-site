@@ -1,4 +1,7 @@
-import '../../scss/entries/consultation.scss';
+import "@scss/entries/consultation.scss";
 
-/* Common */
-import '../common';
+import { commonModule } from "../common";
+
+(async () => {
+  await commonModule();
+})();

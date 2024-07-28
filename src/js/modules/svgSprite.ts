@@ -22,7 +22,15 @@ const sprite = `
 </svg>
 `;
 
-const div = document.createElement("div");
-div.classList.add("hidden");
-div.innerHTML = sprite;
-document.body.insertBefore(div, document.body.childNodes[0]);
+export const createSvgSpriteElement = (() => {
+  function init() {
+    const div = document.createElement("div");
+    div.classList.add("hidden");
+    div.innerHTML = sprite;
+    document.body.insertBefore(div, document.body.childNodes[0]);
+  }
+
+  return {
+    init,
+  };
+})();

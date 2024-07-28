@@ -1,38 +1,47 @@
-const hdm = document.getElementById('headerMobileMenu')!;
-const hb = document.getElementById('headerBurger')!;
+export const siteScrollToBehavior = (() => {
+  const hdm = document.getElementById("headerMobileMenu")!;
+  const hb = document.getElementById("headerBurger")!;
 
-function cmm(): void {
-	hdm.classList.add('hidden');
-	hdm.classList.remove('flex');
+  function cmm(): void {
+    hdm.classList.add("hidden");
+    hdm.classList.remove("flex");
 
-	document.body.classList.remove('overflow-hidden');
+    document.body.classList.remove("overflow-hidden");
 
-	hb.classList.remove('is-active');
-}
+    hb.classList.remove("is-active");
+  }
 
-const scrollToLinks: NodeListOf<HTMLLinkElement> = document.querySelectorAll('.scrollTo');
+  const scrollToLinks: NodeListOf<HTMLLinkElement> =
+    document.querySelectorAll(".scrollTo");
 
-if (scrollToLinks.length !== 0) {
-	scrollToLinks.forEach((item) => {
-		item.addEventListener('click', function (evt) {
-			evt.preventDefault();
+  function init() {
+    if (scrollToLinks.length === 0) return;
 
-			if (!hdm.classList.contains('hidden')) {
-				cmm();
-			}
+    scrollToLinks.forEach((item) => {
+      item.addEventListener("click", function (evt) {
+        evt.preventDefault();
 
-			const toGo = this.getAttribute('href');
-			const section = document.querySelector(`${toGo}`);
+        if (!hdm.classList.contains("hidden")) {
+          cmm();
+        }
 
-			if (section) {
-				const yCord = section.getBoundingClientRect().top;
+        const toGo = this.getAttribute("href");
+        const section = document.querySelector(`${toGo}`);
 
-				window.scrollTo({
-					top: yCord,
-					left: 0,
-					behavior: 'smooth',
-				});
-			}
-		});
-	});
-}
+        if (section) {
+          const yCord = section.getBoundingClientRect().top;
+
+          window.scrollTo({
+            top: yCord,
+            left: 0,
+            behavior: "smooth",
+          });
+        }
+      });
+    });
+  }
+
+  return {
+    init,
+  };
+})();

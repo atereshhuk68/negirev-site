@@ -1,14 +1,46 @@
-import Splide from '@splidejs/splide';
+import "@splidejs/splide/css/core";
+import "../../scss/modules/slider.scss";
+import Splide from "@splidejs/splide";
 
-function initSlider(): void {
-	const slider = new Splide('#certificateSlider', {
-		type: 'loop',
-		perPage: 1,
-		mediaQuery: 'min',
-		gap: 32,
-	});
+export const certificatesSlider = (() => {
+  const certificatesSliderContainer: HTMLElement | null =
+    document.querySelector("#certificateSlider");
 
-	slider.mount();
-}
+  if (!certificatesSliderContainer) return;
 
-initSlider();
+  const slider = new Splide(certificatesSliderContainer, {
+    type: "loop",
+    perPage: 1,
+    mediaQuery: "min",
+    gap: 32,
+  });
+
+  function beforeSliderMount() {
+    slider.on("mounted", () => {
+      const sliders =
+        certificatesSliderContainer?.querySelectorAll(".splide__slide");
+
+      if (!sliders) return;
+
+      for (const slide of sliders) {
+        slide.role = "listitem";
+      }
+
+      const slidesList =
+        certificatesSliderContainer?.querySelector(".splide__list");
+
+      if (!slidesList) return;
+
+      slidesList.role = "list";
+    });
+  }
+
+  function init(): void {
+    beforeSliderMount();
+    slider.mount();
+  }
+
+  return {
+    init,
+  };
+})();

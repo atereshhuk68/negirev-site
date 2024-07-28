@@ -1,9 +1,14 @@
-import '@splidejs/splide/css/core';
-import '../../scss/entries/home.scss';
+import "@scss/entries/home.scss";
 
-/* Common */
-import '../common';
+import { commonModule } from "../common";
 
 /* Script for this page */
-import '@modules/videoPlayer.ts';
-import '@modules/reviewsSlider.ts';
+import { addVideoOnPage } from "../modules/videoPlayer.ts";
+import { reviewsSlider } from "../modules/reviewsSlider.ts";
+
+(async () => {
+  await commonModule();
+
+  addVideoOnPage.init();
+  reviewsSlider!.init();
+})();

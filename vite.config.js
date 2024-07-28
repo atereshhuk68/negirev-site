@@ -7,7 +7,7 @@ export default defineConfig({
   resolve: {
     alias: {
       "@fonts": resolve(__dirname, "src/assets/fonts/"),
-      "@modules": resolve(__dirname, "src/js/modules/"),
+      "@scss": resolve(__dirname, "src/scss/"),
     },
   },
   build: {
