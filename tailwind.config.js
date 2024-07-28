@@ -17,6 +17,13 @@ export default {
       body: ["Georgia", "serif"],
       arial: ["Arial", "sans-serif"],
     },
+    colors: {
+      white: "#fff",
+      black: "#000",
+    },
+  },
+  experimental: {
+    optimizeUniversalDefaults: true,
   },
   plugins: [],
 };
