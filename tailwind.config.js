@@ -13,9 +13,7 @@ export default {
     },
     fontFamily: {
       serif: ["Georgia", "serif"],
-      sans: ["Inter", "sans-serif"],
       body: ["Georgia", "serif"],
-      arial: ["Arial", "sans-serif"],
     },
     colors: {
       white: "#fff",
