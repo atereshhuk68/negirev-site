@@ -60,9 +60,10 @@
   <header class="header py-8 text-xl font-serif">
     <div class="container px-4 flex items-center flex-wrap justify-between gap-8">
       <div class="logo header__logo">
-        <a href="/" class="uppercase leading-none font-serif tracking-widest hover:text-gray-300 transition-colors">
+        <span
+          class="uppercase leading-none font-serif tracking-widest hover:text-gray-300 transition-colors cursor-default">
           Психолог <br>Негирев
-        </a>
+        </span>
       </div>
 
       <div class="headerNavContainer hidden">
@@ -107,7 +108,6 @@
         </button>
       </div>
 
-      <!-- Mobile menu -->
       <div id="headerMobileMenu" class="hidden flex-col gap-8 w-full lg:w-max pb-8"></div>
     </div>
   </header>
@@ -129,10 +129,19 @@
         </div>
 
         <div class="intro__photo sm:w-3/4 md:w-1/2 relative">
-          <img class="md:hidden" src="images/intro-photo.webp" alt="Владимир Владимирович Негирев Фото" width="408"
-            height="476">
-          <img class="hidden md:block" src="images/intro-photo-desktop.webp" alt="Владимир Владимирович Негирев Фото"
-            width="840" height="982">
+          <picture>
+            <source type="image/avif" srcset="/images/intro-photo.avif">
+
+            <img class="md:hidden" src="images/intro-photo.webp" alt="Владимир Владимирович Негирев Фото" width="408"
+              height="476">
+          </picture>
+
+          <picture>
+            <source type="image/avif" srcset="/images/intro-photo-desktop.avif">
+
+            <img class="hidden md:block" src="/images/intro-photo-desktop.webp" alt="Владимир Владимирович Негирев Фото"
+              width="840" height="982">
+          </picture>
         </div>
       </div>
     </section>
@@ -143,12 +152,20 @@
 
         <div class="flex flex-col sm:flex-row gap-12 items-center justify-center mt-8">
           <div class="flex flex-col items-center gap-4 sm:w-1/2">
-            <img src="src/assets/images/education.webp" alt="Индивидуальные онлайн-консультации" width="70" height="70">
+            <picture>
+              <source srcset="/images/education.avif" type="image/avif">
+
+              <img src="/images/education.webp" alt="Индивидуальные онлайн-консультации" width="70" height="70">
+            </picture>
 
             <p class="text-xl text-center">Индивидуальные онлайн-консультации</p>
           </div>
           <div class="flex flex-col items-center gap-4 sm:w-1/2">
-            <img src="src/assets/images/counselling.webp" alt="Семейные онлайн-консультации" width="70" height="70">
+            <picture>
+              <source srcset="/images/counselling.avif" type="image/avif">
+
+              <img src="/images/counselling.webp" alt="Семейные онлайн-консультации" width="70" height="70">
+            </picture>
 
             <p class="text-xl text-center">Семейные <br class="hidden md:block lg:hidden">онлайн-консультации</p>
           </div>
@@ -192,7 +209,12 @@
       <div class="container px-4">
         <div class="lg:w-3/4 lg:mx-auto">
           <div class="videoPlayerMockup relative hover:opacity-80 transition-opacity cursor-pointer">
-            <img class="aspect-video w-full" src="src/assets/images/videocover.webp" loading="lazy" alt="Video Cover">
+            <picture>
+              <source type="image/avif" srcset="/images/videocover.avif">
+
+              <img class="aspect-video w-full" src="/images/videocover.webp" loading="lazy" alt="Video Cover">
+            </picture>
+
             <svg class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-8 h-8 md:w-16 md:h-16"
               aria-label="Instagram account" width="64" height="64">
               <use xlink:href="#play"></use>
