@@ -47,13 +47,13 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
-      - name: Deploy to server via SFTP
-        id: upload
-        uses: wearesection/sftp-action@v1.0.1
+      - name: 📂 SFTP uploader                       # Upload to SFTP
+        uses: wangyucode/sftp-upload-action@v2.0.2
         with:
-          host: ${{ env.SFTP_HOST }}
-          port: 22
+          host: ${{ env.SFTP_HOST }}      # Recommended to put the credentials in github secrets.
           username: ${{ env.SFTP_USERNAME }}
           password: ${{ env.SFTP_PASSWORD }}
-          localPath: './dist'
-          remotePath: ${{ env.SFTP_PATH }}
+          compress: false
+          forceUpload: true
+          localDir: './dist'
+          remoteDir: ${{ env.SFTP_PATH }}
