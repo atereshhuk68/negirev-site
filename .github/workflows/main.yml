@@ -32,6 +32,11 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: pnpm
 
+      - name: Setup pnpm
+        run: |
+          corepack enable
+          corepack prepare pnpm@latest --activate
+
       - name: Install dependencies and build
         run: |
           pnpm install --frozen-lockfile
