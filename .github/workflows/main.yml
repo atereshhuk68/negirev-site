@@ -50,10 +50,11 @@ jobs:
       - name: 📂 SFTP uploader                       # Upload to SFTP
         uses: wangyucode/sftp-upload-action@v2.0.2
         with:
-          host: ${{ env.SFTP_HOST }}      # Recommended to put the credentials in github secrets.
-          username: ${{ env.SFTP_USERNAME }}
-          password: ${{ env.SFTP_PASSWORD }}
-          compress: false
+          host: ${{ secrets.SFTP_HOST }}      # Recommended to put the credentials in github secrets.
+          username: ${{ secrets.SFTP_USERNAME }}
+          password: ${{ secrets.SFTP_PASSWORD }}
+          privateKey: ${{ secrets.SFTP_PRIVATE_KEY }}
+          passphrase: ${{ secrets.SFTP_PHRASE }}
           forceUpload: true
           localDir: './dist'
-          remoteDir: ${{ env.SFTP_PATH }}
+          remoteDir: ${{ secrets.SFTP_REMOTE_PATH }}
