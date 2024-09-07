@@ -1,27 +1,21 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["main"]
 
-  # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
-# Sets the GITHUB_TOKEN permissions to allow deployment to GitHub Pages
 permissions:
   contents: read
   pages: write
   id-token: write
 
-# Allow one concurrent deployment
 concurrency:
   group: "pages"
   cancel-in-progress: true
 
 jobs:
-  # Single deploy job since we're just deploying
   deploy:
     environment:
       name: github-pages
@@ -49,17 +43,17 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
-          # Upload dist repository
           path: "./dist"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v1
       - name: Deploy to server via SFTP
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        id: upload
+        uses: wearesection/sftp-action@v1.0.0
         with:
-          server: ${{ env.SFTP_HOST }}
+          host: ${{ env.SFTP_HOST }}
+          port: 22
           username: ${{ env.SFTP_USERNAME }}
           password: ${{ env.SFTP_PASSWORD }}
-          sftp_only: true
-          local_path: './dist'
-          remote_path: ${{ env.SFTP_PATH }}
+          localPath: './dist'
+          remotePath: ${{ env.SFTP_PATH }}
